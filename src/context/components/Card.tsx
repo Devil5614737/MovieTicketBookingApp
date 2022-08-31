@@ -28,6 +28,7 @@ export const Card=({title,image,genreList,movie}:CardI)=>{
     return (
         <Box cursor='pointer' bg="#F7F9FC" borderRadius={7}>
           <Image
+          loading="lazy"
           onClick={()=>handleMoviePreview(movie)}
           w={"100%"}
           h={350}
