@@ -1,6 +1,6 @@
 
-import { MoviesContainer } from '../components/MoviesContainer'
-import { Navbar } from '../components/Navbar'
+import { MoviesContainer } from '../context/components/MoviesContainer'
+import { Navbar } from '../context/components/Navbar'
 
 
 function Dashboard() {

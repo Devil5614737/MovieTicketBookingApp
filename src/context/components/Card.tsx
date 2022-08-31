@@ -1,7 +1,7 @@
 import { Box, Image,Text } from "@chakra-ui/react"
 import { useContext } from "react";
-import { MoviesContext } from "../context/MoviesContext";
-import { MoviesContextI, MoviesI } from "../interface/movies";
+import { MoviesContext } from "../MoviesContext";
+import { MoviesContextI, MoviesI } from "../../interface/movies";
 
 
 interface GenreList {

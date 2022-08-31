@@ -1,37 +1,38 @@
 interface GenreList {
-  key: string;
-  value: string;
+  key: string,
+  value: string,
 }
 
 interface DirectorList {
-  id: string;
-  name: string;
+  id: string,
+  name: string,
 }
 
 interface StarList {
-  id: string;
-  name: string;
+  id: string,
+  name: string,
 }
 
 export interface MoviesI {
-  id: string;
-  title: string;
-  fullTitle: string;
-  year: string;
-  releaseDate: string;
-  image: string;
-  runtimeMins: string;
-  runtimeStr: string;
-  plot: string;
-  contentRating: string;
-  imDbRating: string;
-  metacriticRating: 49;
-  genres: string;
-  genreList: GenreList[];
-  directors: string;
-  directorList: DirectorList[];
-  stars: string;
-  starList: StarList[];
+  id: string,
+  title: string,
+  fullTitle: string,
+  year: string,
+  releaseDate: string,
+  image: string,
+  runtimeMins: string,
+  runtimeStr: string,
+  plot: string,
+  contentRating: string,
+  imDbRating: string,
+  imDbRatingCount:string,
+  metacriticRating: string,
+  genres: string,
+  genreList: GenreList[],
+  directors: string,
+  directorList: DirectorList[],
+  stars: string,
+  starList: StarList[],
 }
 
 

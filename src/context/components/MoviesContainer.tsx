@@ -1,8 +1,8 @@
 import {useContext} from 'react';
 import { Box, Grid } from "@chakra-ui/react"
 import { Card } from "./Card"
-import { MoviesContext } from '../context/MoviesContext';
-import { MoviesContextI } from '../interface/movies';
+import { MoviesContext } from '../MoviesContext';
+import { MoviesContextI } from '../../interface/movies';
 
 export const MoviesContainer=()=>{
   const {movies}=useContext<MoviesContextI>(MoviesContext)

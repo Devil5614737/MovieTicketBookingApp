@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import Lottie from 'react-lottie';
-import animationData from '../assets/loading.json'
+import animationData from '../../assets/loading.json'
 
 export const Loading=()=>{
 

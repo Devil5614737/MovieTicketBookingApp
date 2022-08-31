@@ -28,10 +28,10 @@ function SelectSeat() {
     useContext<MoviesContextI>(MoviesContext);
   const navigate = useNavigate();
   const [seats, setSeats] = useState<any>(data.seats);
-  let [clicked, setClicked] = useState<number>(0);
+  let [seatCount, setSeatCount] = useState<number>(0);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [timings, setTimings] = useState<TimesI[]>(data.time);
-  const [selectedTime, setSelectedTime] = useState<string>();
+  const [selectedTime, setSelectedTime] = useState<string|any>();
 
   useEffect(() => {
     if (!selectedSeat || !specificMovie) {
@@ -41,13 +41,13 @@ function SelectSeat() {
 
   const bookSeats = (id: number) => {
     if(!selectedTime) return alert('select time first')
-    setClicked(clicked + 1);
+    setSeatCount(seatCount + 1);
     const checked = seats.map((seat: any) =>
       seat.id === id
         ? {
             ...seat,
             checked:
-              clicked < selectedSeat
+              seatCount < selectedSeat
                 ? !seat.checked
                 : alert(`only ${selectedSeat} seats are allowed`)
           }
@@ -110,7 +110,7 @@ function SelectSeat() {
         <Box display="grid" gridTemplateColumns={"repeat(5, 1fr)"} gap={5}>
           {seats.map((seat: any) => (
             <Button
-              disabled={clicked > selectedSeat}
+              disabled={seatCount > selectedSeat}
               bg={seat.checked ? "green" : "white"}
               cursor={"pointer"}
               onClick={() => bookSeats(seat.id)}
@@ -137,6 +137,7 @@ function SelectSeat() {
         ))}
       </Box>
       <Button
+      disabled={!selectedTime}
         onClick={onOpen}
         bg="#6366F1"
         color="white"

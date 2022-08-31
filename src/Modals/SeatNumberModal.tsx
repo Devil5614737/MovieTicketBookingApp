@@ -16,45 +16,17 @@ import Lottie from 'react-lottie';
 import animationData from '../assets/animation.json'
 import { AuthContext } from "../context/AuthContext";
 import { AuthContextI } from "../interface/auth";
+import { selectSeatsI } from "../interface/seats";
+import { selectSeats } from "../data/seats";
+
 
 interface SeatNumberModalI {
   isOpen: any;
   onClose: any;
 }
 
-interface selectSeatsI{
-  id:number,
-  content:number,
-  isActive?:boolean
-}
 
-const selectSeats:selectSeatsI[] = [
-  {
-    id: 1,
-    content: 1,
 
-  },
-  {
-    id: 2,
-    content: 2,
-
-  },
-  {
-    id: 3,
-    content: 3,
-      
-  },
-  {
-    id: 4,
-    content: 4,
- 
-  },
-  {
-    id: 5,
-    content: 5,
-  
-  },
-];
 
 export const SeatNumberModal = ({ isOpen, onClose }: SeatNumberModalI) => {
   const { handleTicketBooking, setSelectedSeat } =

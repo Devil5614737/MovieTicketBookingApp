@@ -5,7 +5,7 @@ import MoviePreview from './pages/MoviePreview';
 import {Routes,Route} from 'react-router-dom';
 import SelectSeat from './pages/SelectSeat';
 import { AuthContextProvider } from './context/AuthContext';
-import { Loading } from './components/Loading';
+import { Loading } from './context/components/Loading';
 
 const Dashboard = React.lazy(() => import('./pages/Dashboard'));
 

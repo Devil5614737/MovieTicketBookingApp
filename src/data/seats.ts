@@ -59,4 +59,40 @@ const time = [
   },
 ];
 
+
+const selectSeats = [
+  {
+    id: 1,
+    content: 1,
+    isActive:false
+
+  },
+  {
+    id: 2,
+    content: 2,
+    isActive:false
+
+  },
+  {
+    id: 3,
+    content: 3,
+    isActive:false
+      
+  },
+  {
+    id: 4,
+    content: 4,
+ 
+  },
+  {
+    id: 5,
+    content: 5,
+  
+  },
+];
+
+
+
   export default {seats,seatTypes,time}
+
+  export {selectSeats}

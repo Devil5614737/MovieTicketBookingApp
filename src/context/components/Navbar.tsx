@@ -1,13 +1,13 @@
-import { Box, Button, Image, Input} from "@chakra-ui/react";
+import { Box, Button, Image} from "@chakra-ui/react";
 
 import { Link } from "react-router-dom";
 import {  signInWithPopup } from "firebase/auth";
 import { useContext } from "react";
-import { AuthContext } from "../context/AuthContext";
-import { AuthContextI } from "../interface/auth";
+import { AuthContext } from "../AuthContext";
+import { AuthContextI } from "../../interface/auth";
 
-import { auth, provider } from "../lib/firebase";
-import { MoviesContext } from "../context/MoviesContext";
+import { auth, provider } from "../../lib/firebase";
+
 
 
 export const Navbar = () => {
