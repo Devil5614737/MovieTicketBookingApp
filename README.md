@@ -1,2 +1,2 @@
 
-See the section about [deployment](https://movie-ticket-booking-app.vercel.app/) for more information.
+click here for  [demo](https://movie-ticket-booking-app.vercel.app/) 
